@@ -1,0 +1,72 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg {
+    background-image: url("../img/img.png");
+    background-repeat: no-repeat;
+    width: 1500px;
+    height: 866px;  
+    margin: 0 auto;
+}
+
+.h1-header {
+    width: 337px;
+    height: 65px;
+    color: #262626;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 101px;
+}
+
+.text-header {
+    width: 362px;
+    height: 41px;
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.bg-footer {
+    width: 1500px;
+    height: 90px;
+    background-color: #262626;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-company {
+    color: #b9b9b9;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.footer-cahee {
+    color: #b9b9b9;
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer-text {
+    color: #b9b9b9;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.footer-text > span {
+    color: #ff2b58;
+}
