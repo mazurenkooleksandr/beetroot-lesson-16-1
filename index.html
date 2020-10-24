@@ -17,21 +17,24 @@
             </p>
         </header>
 
-        <section>
-            
-                <form action="send.php" method="post">
+        <section class="container">
+            <div>
+                <form name="commentform" id="commentform">
+                    <p><input class="form" type="text" name="author" id="author" placeholder="Your name..."/>
+                    </p>
+                    <p><input class="form" type="text" name="email" id="email" placeholder="Your email..."/>
+                    </p>
+                    <p><input class="form" type="tel" name="tel" placeholder="Your phone number..."/>
+                    </p>
+                    <p><textarea class="form textarea" name="comment" id="comment" placeholder="Your message..."></textarea>
+                    </p>
+                </form>
+            </div>
 
-                    Ваше имя <input type="text" name="first_name"><br>
-                    Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-                    Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-                    <input type="submit" name="submit" value="Submit">
-                    </form>
-            
-
-            <div >
-                <p>ADDRESS</p><address>123 City name, Street, City, Country</address>
-                <p>EMAIL</p><a href="mailto:kakchtoinfo@gmail.com">kakchtoinfo@ukr.net</a>
-                <p>PHONE</p><a href="tel:380932977314">+380 93 297 73 14</a>
+            <div>
+                <p class="text">ADDRESS</p><p class="text-address">123 City name, Street, City, Country</p>
+                <p class="text">EMAIL</p><a class="text-address" href="mailto:kakchtoinfo@gmail.com">kakchtoinfo@ukr.net</a>
+                <p class="text">PHONE</p><a class="text-address" href="tel:380932977314">+380 93 297 73 14</a>
             </div>
         </section>
     </main>
