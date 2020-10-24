@@ -18,20 +18,15 @@
         </header>
 
         <section>
-            <div>
-                <form action="send.php" method="post" name="commentform" id="commentform">
-                    <p><input type="text" name="author" id="author" size="25" />
-                    </p>
-                    <p><input type="text" name="email" id="email" size="25" />
-                    </p>
-                    <p><input type="tel" name="tel" size="25">
-                    </p>
-                    <p><textarea name="comment" id="comment" cols="48" rows="8"></textarea>
-                    </p>
-                    <p><input name="submit" type="submit" id="submit" value="Отправить" />
-                    </p>
-                </form>
-            </div>
+            
+                <form action="send.php" method="post">
+
+                    Ваше имя <input type="text" name="first_name"><br>
+                    Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
+                    Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                    <input type="submit" name="submit" value="Submit">
+                    </form>
+            
 
             <div >
                 <p>ADDRESS</p><address>123 City name, Street, City, Country</address>

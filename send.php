@@ -1,25 +1,22 @@
 <?php
-$author = $_POST['author'];
-$email = $_POST['email'];
-$tel = $_POST['tel'];
-$comment = $_POST['comment'];
-$author = htmlspecialchars($author);
-$email = htmlspecialchars($email);
-$tel = htmlspecialchars($tel);
-$comment = htmlspecialchars($comment);
-$author = urldecode($author);
-$email = urldecode($email);
-$tel = urldecode($tel);
-$comment = urldecode($comment);
-$author = trim($author);
-$email = trim($email);
-$tel = trim($tel);
-$comment = trim($comment);
-//echo $fio;
-//echo "<br>";
-//echo $email;
-if (mail("kakchtoinfo@ukr.net", "Заявка с сайта", "ФИО:".$author.". E-mail: ".$email "Телефон:".$tel. "Комментарий:".$comment.,"From: abcdfg207@i.ua \r\n"))
- {     echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
+
+if(isset($_POST['submit'])){
+$to = "info@epicblog.net";; // Здесь нужно написать e-mail, куда будут приходить письма
+$from = $_POST['email']; // this is the sender's Email address
+$first_name = $_POST['first_name'];
+$subject = "Форма отправки сообщений с сайта";
+$subject2 = "Copy of your form submission";
+$message = $first_name . " оставил сообщение:" . "\n\n" . $_POST['message'];
+$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+$headers = "From:" . $from;
+$headers2 = "From:" . $to;
+
+mail($to,$subject,$message,$headers);
+// mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
+echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
+echo "<br /><br /><a href='https://epicblog.net'>Вернуться на сайт.</a>";
+
+}
+
+?>
